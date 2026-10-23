@@ -6,6 +6,19 @@
   "type": "module",
   "main": "index.js",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/17-qxm/dsh-virtual-coding-plan.git"
+  },
+  "homepage": "https://github.com/17-qxm/dsh-virtual-coding-plan#readme",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "coding-plan",
+    "quota",
+    "budget",
+    "token-cost"
+  ],
   "exports": {
     ".": "./index.js",
     "./client": "./client.js",
