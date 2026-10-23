@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Virtual Coding Plan",
+    "description": "A local spend cap that behaves like a coding plan: tracks CNY spend against rolling and weekly limits, finishes the reply in flight, then refuses new turns until the window resets or you raise the limit."
+  },
+  "plan": "Virtual Coding Plan"
+}

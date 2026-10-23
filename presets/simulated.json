@@ -1,0 +1,24 @@
+{
+  "id": "simulated",
+  "name": "模拟 Plan",
+  "currency": "CNY",
+  "note": "金额为示意值，可自行修改；换成真实第三方 plan 时只改这个文件的上限。",
+  "enforcement": "block",
+  "windows": [
+    {
+      "id": "session",
+      "label": "5 小时",
+      "short": "5h",
+      "kind": "rolling",
+      "durationMs": 18000000,
+      "limitYuan": 5
+    },
+    {
+      "id": "weekly",
+      "label": "本周",
+      "short": "周",
+      "kind": "calendar-week",
+      "limitYuan": 30
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "blocked",
+  "name": "强制用尽（测试）",
+  "debug": true,
+  "currency": "CNY",
+  "note": "测试用：两个窗口上限都是 0，任何时刻都判定为「额度已用尽」，不会自动恢复。",
+  "windows": [
+    {
+      "id": "session",
+      "label": "5 小时",
+      "short": "5h",
+      "kind": "rolling",
+      "durationMs": 18000000,
+      "limitYuan": 0
+    },
+    {
+      "id": "weekly",
+      "label": "本周",
+      "short": "周",
+      "kind": "calendar-week",
+      "limitYuan": 0
+    }
+  ]
+}

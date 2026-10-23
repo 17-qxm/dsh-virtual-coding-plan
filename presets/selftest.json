@@ -1,0 +1,24 @@
+{
+  "id": "selftest",
+  "name": "自检 Plan（10 分钟窗口）",
+  "debug": true,
+  "currency": "CNY",
+  "note": "测试用：10 分钟滚动窗口、¥0.01 上限。窗口里只要有一笔花费就截停，10 分钟后自动恢复。",
+  "windows": [
+    {
+      "id": "session",
+      "label": "10 分钟",
+      "short": "10m",
+      "kind": "rolling",
+      "durationMs": 600000,
+      "limitYuan": 0.01
+    },
+    {
+      "id": "weekly",
+      "label": "本周",
+      "short": "周",
+      "kind": "calendar-week",
+      "limitYuan": 999
+    }
+  ]
+}

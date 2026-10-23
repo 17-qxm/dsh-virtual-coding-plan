@@ -1,0 +1,10 @@
+# dsh-virtual-coding-plan —— bundle patch
+#
+# Inserts the Host half. The Client half is declared by package.json's
+# `dsh.client` section and loaded by the Web plugin table.
+- insert:
+    - id: dsh-virtual-coding-plan
+      name: dsh-virtual-coding-plan
+      config:
+        preset: simulated
+        enforcement: block

@@ -1,0 +1,39 @@
+{
+  "name": "dsh-virtual-coding-plan",
+  "version": "0.2.0",
+  "private": true,
+  "description": "A local, simulated (virtual) coding plan for DeepSeek Harness: tracks spend in CNY against rolling and weekly caps, refuses requests when a cap is reached, and shows a plan strip under the composer.",
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "pricing.mjs",
+    "presets/*.json",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "scripts": {
+    "test": "node --test test/pricing.test.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+    }
+  }
+}
